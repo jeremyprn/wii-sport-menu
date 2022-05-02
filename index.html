@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wii sport menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <video autoplay muted hidden id="theme">
+            <source src="./assets/theme.mp3"/>
+        </video>
+        <video hidden muted id="select">
+            <source src="./assets/select.mp3"/>
+        </video>
+        <div class="title-container">
+            <h1>Jérémy Piorun</h1>
+        </div>
+        <div id="bttnMuted" class="volume-bttn">
+            <ion-icon name="volume-medium-outline"></ion-icon>
+            <ion-icon class="active" name="volume-mute-outline"></ion-icon>
+        </div>
+    </header>
+    <main>
+        <div class="left-container">
+            <ul class="list">
+                <li data-section="me">
+                    <button>
+                        <p>Me</p>
+                    </button>
+                </li>
+                <li data-section="cursus">
+                    <button>
+                        <p>Cursus</p>
+                    </button>
+                </li>
+                <li data-section="projects">
+                    <button>
+                        <p>Projects</p>
+                    </button>
+                </li>
+                <li data-section="social">
+                    <button>
+                        <p>Social</p>
+                    </button>
+                </li>
+                <li data-section="boxing">
+                    <button>
+                        <p>Boxing</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="right-container">
+            <div class="content-container">
+                <div class="content">
+                   <div class="content-section" id="me"> Me section</div>
+                   <div class="content-section" id="cursus">Cursus section</div>
+                   <div class="content-section" id="projects">Projects section</div>
+                   <div class="content-section" id="social">Social section</div>
+                   <div class="content-section" id="boxing">Boxing section</div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>     
+<script src="js/script.js"></script>
+</html>
